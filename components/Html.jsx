@@ -1,4 +1,5 @@
 import React from 'react';
+import packageJSON from '../package.json';
 
 class Html extends React.Component {
     render() {
@@ -6,7 +7,7 @@ class Html extends React.Component {
             <html>
             <head>
                 <meta charSet="utf-8" />
-                <title>TITLE</title>
+                <title>{packageJSON.name}</title>
                 <meta name="viewport" content="width=device-width, user-scalable=no" />
             </head>
             <body>
